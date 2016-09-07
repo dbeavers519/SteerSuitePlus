@@ -1,0 +1,10 @@
+09/07/16 Changelog
+1. TestCasePlayerModule.h
+	- Added preprocessFrame() method
+2. TestCasePlayerModule.cpp
+	- Implemented preprocessFrame() method
+3. SimulationEngine.cpp
+	- Removed checkWaitingAgents() call from update
+4. uftcconverter Project
+	- Created uftcconverter project
+	- Created UFTCConverter.cpp and .h files

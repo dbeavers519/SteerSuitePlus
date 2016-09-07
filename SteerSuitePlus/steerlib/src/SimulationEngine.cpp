@@ -462,9 +462,6 @@ bool SimulationEngine::update( bool advanceRealTimeOnly )
 		_clock.advanceSimulationAndUpdateRealTime();
 		_camera.update(_clock.getCurrentRealTime(), _clock.getRealDt());
 
-		// Check to see if any waiting agents are ready to join
-		checkWaitingAgents();
-
 		// Run the actual simulation step, taking the appropriate action based on its return value.
 		if (_simulateOneStep() == true) {
 			return true;
@@ -1242,24 +1239,26 @@ void SimulationEngine::addWaitingAgent(const SteerLib::AgentInitialConditions & 
 
 void SimulationEngine::checkWaitingAgents() {
 	// Iterate over the waitlist
-	std::vector<std::pair<SteerLib::AgentInitialConditions, SteerLib::ModuleInterface *>>::iterator waitListIterator;
-	for (waitListIterator = _waitList.begin(); waitListIterator != _waitList.end(); ++waitListIterator) {
-		// If the start time is <= the current time, add the agent
-		if ((*waitListIterator).first.startTime <= _clock.getCurrentSimulationTime()) {
-			SteerLib::AgentInterface * newAgent = (*waitListIterator).second->createAgent();
-			if (newAgent != NULL) {
-				_agentInitialConditions.push_back((*waitListIterator).first);
-				_agents.push_back(newAgent);
-				_agentOwners[newAgent] = (*waitListIterator).second;
-				_spawned_agent_emitter_num.push_back(-1);
+	if (_waitList.size() > 0) {
+		std::vector<std::pair<SteerLib::AgentInitialConditions, SteerLib::ModuleInterface *>>::iterator waitListIterator;
+		for (waitListIterator = _waitList.begin(); waitListIterator != _waitList.end(); ++waitListIterator) {
+			// If the start time is <= the current time, add the agent
+			if ((*waitListIterator).first.startTime <= _clock.getCurrentSimulationTime()) {
+				SteerLib::AgentInterface * newAgent = (*waitListIterator).second->createAgent();
+				if (newAgent != NULL) {
+					_agentInitialConditions.push_back((*waitListIterator).first);
+					_agents.push_back(newAgent);
+					_agentOwners[newAgent] = (*waitListIterator).second;
+					_spawned_agent_emitter_num.push_back(-1);
 
-				// Reset the agent (adds to the simulation, usually done in the preprocessSimulation step)
-				_agents.back()->reset(_agentInitialConditions.back(), this);
-			}
-			// Remove from waitlist
-			waitListIterator = _waitList.erase(waitListIterator);
-			if (waitListIterator == _waitList.end()) {
-				break;
+					// Reset the agent (adds to the simulation, usually done in the preprocessSimulation step)
+					_agents.back()->reset(_agentInitialConditions.back(), this);
+				}
+				// Remove from waitlist
+				waitListIterator = _waitList.erase(waitListIterator);
+				if (waitListIterator == _waitList.end()) {
+					break;
+				}
 			}
 		}
 	}
