@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="steersimlib">
+      <UniqueIdentifier>{4D2A9713-48D0-C848-98A7-093740B3378F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="steersimlib\include">
+      <UniqueIdentifier>{A75C8A46-F89F-E54D-B14F-B30E3E1C2C10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="steersimlib\include\core">
+      <UniqueIdentifier>{8B62D29C-5C24-F14D-A48E-67FE69E78781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="steersimlib\include\qtgui">
+      <UniqueIdentifier>{56498324-4147-A543-8A5E-03EAC1BC25F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="steersimlib\src">
+      <UniqueIdentifier>{29B8D488-EADB-804F-8DB6-A5580D279EF2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\steersimlib\include\core\CommandLineEngineDriver.h">
+      <Filter>steersimlib\include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\core\GLFWEngineDriver.h">
+      <Filter>steersimlib\include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\core\QtEngineDriver.h">
+      <Filter>steersimlib\include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\core\SteerSim.h">
+      <Filter>steersimlib\include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\qtgui\ClockWidget.h">
+      <Filter>steersimlib\include\qtgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\qtgui\ConsoleWidget.h">
+      <Filter>steersimlib\include\qtgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\qtgui\GlobalEventFilter.h">
+      <Filter>steersimlib\include\qtgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\qtgui\GLWidget.h">
+      <Filter>steersimlib\include\qtgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\qtgui\ModuleManagerWidget.h">
+      <Filter>steersimlib\include\qtgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\qtgui\QtEngineController.h">
+      <Filter>steersimlib\include\qtgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\qtgui\RecFilePlayerWidget.h">
+      <Filter>steersimlib\include\qtgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\qtgui\TestCasePlayerWidget.h">
+      <Filter>steersimlib\include\qtgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\steersimlib\include\qtgui\Tooltip.h">
+      <Filter>steersimlib\include\qtgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\steersimlib\src\ClockWidget.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\CommandLineEngineDriver.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\ConsoleWidget.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\GLFWEngineDriver.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\GlobalEventFilter.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\GLWidget.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\ModuleManagerWidget.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\QtEngineController.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\QtEngineDriver.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\RecFilePlayerWidget.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\SteerSim.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\steersimlib\src\TestCasePlayerWidget.cpp">
+      <Filter>steersimlib\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

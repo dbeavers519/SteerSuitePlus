@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="socialForcesAI">
+      <UniqueIdentifier>{6BE3135D-9AAF-3D4A-A84E-0066015955E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socialForcesAI\include">
+      <UniqueIdentifier>{51012F63-5E91-5247-AFEE-C7ADFA31DC5F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socialForcesAI\src">
+      <UniqueIdentifier>{96E876B0-83FE-7E42-B212-C9D3789E9A87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\socialForcesAI\include\SocialForcesAgent.h">
+      <Filter>socialForcesAI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\socialForcesAI\include\SocialForcesAIModule.h">
+      <Filter>socialForcesAI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\socialForcesAI\include\SocialForces_Parameters.h">
+      <Filter>socialForcesAI\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\socialForcesAI\src\SocialForcesAgent.cpp">
+      <Filter>socialForcesAI\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\socialForcesAI\src\SocialForcesAIModule.cpp">
+      <Filter>socialForcesAI\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="util">
+      <UniqueIdentifier>{0502A54E-3D21-3148-BB67-132A02CB7522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\include">
+      <UniqueIdentifier>{3C694011-4B63-2048-8B9D-792F6C037E13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\include\astar">
+      <UniqueIdentifier>{6DE4C1DA-EB7E-AE47-921C-34529DF9105C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\src">
+      <UniqueIdentifier>{7E5C0558-723B-D14C-83FE-8DB1F1E131E5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\util\include\LogData.h">
+      <Filter>util\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\include\Logger.h">
+      <Filter>util\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\include\LogManager.h">
+      <Filter>util\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\include\LogObject.h">
+      <Filter>util\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\include\PluginAPI.h">
+      <Filter>util\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\include\UtilGlobals.h">
+      <Filter>util\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\include\astar\AStarLite.h">
+      <Filter>util\include\astar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\include\astar\AStarLiteClose.h">
+      <Filter>util\include\astar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\include\astar\AStarLiteNode.h">
+      <Filter>util\include\astar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\include\astar\AStarLiteOpen.h">
+      <Filter>util\include\astar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util\include\astar\Environment.h">
+      <Filter>util\include\astar</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\util\src\AStarLite.cpp">
+      <Filter>util\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\src\AStarLiteClose.cpp">
+      <Filter>util\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\src\AStarLiteNode.cpp">
+      <Filter>util\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\src\AStarLiteOpen.cpp">
+      <Filter>util\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\src\LogData.cpp">
+      <Filter>util\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\src\Logger.cpp">
+      <Filter>util\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\src\LogManager.cpp">
+      <Filter>util\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util\src\LogObject.cpp">
+      <Filter>util\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

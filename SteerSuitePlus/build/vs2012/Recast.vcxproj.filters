@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="external">
+      <UniqueIdentifier>{5002CA83-48F6-5149-927F-39942EB9D107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\recastnavigation">
+      <UniqueIdentifier>{8AC61F5C-86B7-0049-8EE4-A6F53D24FADC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\recastnavigation\Recast">
+      <UniqueIdentifier>{CA6EE3E2-C16C-D945-AD23-5C81130B517A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\recastnavigation\Recast\Include">
+      <UniqueIdentifier>{D5269AB1-2131-0849-AE46-2E346700EB2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\recastnavigation\Recast\Source">
+      <UniqueIdentifier>{B7455F63-6603-5742-9DF7-432632B72842}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\recastnavigation\Recast\Include\Recast.h">
+      <Filter>external\recastnavigation\Recast\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\recastnavigation\Recast\Include\RecastAlloc.h">
+      <Filter>external\recastnavigation\Recast\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\recastnavigation\Recast\Include\RecastAssert.h">
+      <Filter>external\recastnavigation\Recast\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\recastnavigation\Recast\Source\Recast.cpp">
+      <Filter>external\recastnavigation\Recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\recastnavigation\Recast\Source\RecastAlloc.cpp">
+      <Filter>external\recastnavigation\Recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\recastnavigation\Recast\Source\RecastArea.cpp">
+      <Filter>external\recastnavigation\Recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\recastnavigation\Recast\Source\RecastContour.cpp">
+      <Filter>external\recastnavigation\Recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\recastnavigation\Recast\Source\RecastFilter.cpp">
+      <Filter>external\recastnavigation\Recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\recastnavigation\Recast\Source\RecastLayers.cpp">
+      <Filter>external\recastnavigation\Recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\recastnavigation\Recast\Source\RecastMesh.cpp">
+      <Filter>external\recastnavigation\Recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\recastnavigation\Recast\Source\RecastMeshDetail.cpp">
+      <Filter>external\recastnavigation\Recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\recastnavigation\Recast\Source\RecastRasterization.cpp">
+      <Filter>external\recastnavigation\Recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\recastnavigation\Recast\Source\RecastRegion.cpp">
+      <Filter>external\recastnavigation\Recast\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

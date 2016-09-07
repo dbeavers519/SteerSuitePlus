@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="external">
+      <UniqueIdentifier>{3C007F18-13AF-8640-B0DF-589A20025A04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\tinyxml">
+      <UniqueIdentifier>{B89BBACA-6F4D-724B-BB67-59919EB41BF5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\tinyxml\ticpp.h">
+      <Filter>external\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\tinyxml\ticpprc.h">
+      <Filter>external\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\tinyxml\tinystr.h">
+      <Filter>external\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\tinyxml\tinyxml.h">
+      <Filter>external\tinyxml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\tinyxml\ticpp.cpp">
+      <Filter>external\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\tinyxml\tinystr.cpp">
+      <Filter>external\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\tinyxml\tinyxml.cpp">
+      <Filter>external\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\tinyxml\tinyxmlerror.cpp">
+      <Filter>external\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\tinyxml\tinyxmlparser.cpp">
+      <Filter>external\tinyxml</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
