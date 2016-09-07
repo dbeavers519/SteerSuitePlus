@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="pprAI">
+      <UniqueIdentifier>{B16B64BC-4C95-BD4D-989B-1A3E6B8680C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pprAI\include">
+      <UniqueIdentifier>{7A2D4C06-28C0-4E46-B1FC-0ADA73BD67BA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pprAI\src">
+      <UniqueIdentifier>{02B08F36-8546-E94A-A4A9-D8548003A73D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\pprAI\include\PPRAgent.h">
+      <Filter>pprAI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pprAI\include\PPRAIModule.h">
+      <Filter>pprAI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pprAI\include\PPRParameters.h">
+      <Filter>pprAI\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\pprAI\src\PPRAgent.cpp">
+      <Filter>pprAI\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pprAI\src\PPRAIModule.cpp">
+      <Filter>pprAI\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
