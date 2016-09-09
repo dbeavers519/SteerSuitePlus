@@ -26,6 +26,7 @@ namespace SteerLib {
 		void init( const SteerLib::OptionDictionary & options, SteerLib::EngineInterface * engineInfo );
 		void finish();
 		void initializeSimulation();
+		void preprocessFrame(float timeStamp, float dt, unsigned int frameNumber);
 		void postprocessFrame(float timeStamp, float dt, unsigned int frameNumber);
 		void cleanupSimulation();
 

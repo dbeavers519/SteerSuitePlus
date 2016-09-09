@@ -1,25 +1,3 @@
-﻿Build started 9/6/2016 1:54:18 AM.
-     1>Project "C:\Users\David\Documents\Visual Studio 2013\Projects\SteerSuite\build\vs2012\steersimlib.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\steersimlib.dll" /INCREMENTAL /NOLOGO /LIBPATH:..\lib opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\bin\steersimlib.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\bin\steersimlib.lib" /MACHINE:X86 /DLL obj\Debug\steersimlib\ClockWidget.obj
-         obj\Debug\steersimlib\CommandLineEngineDriver.obj
-         obj\Debug\steersimlib\ConsoleWidget.obj
-         obj\Debug\steersimlib\GLFWEngineDriver.obj
-         obj\Debug\steersimlib\GlobalEventFilter.obj
-         obj\Debug\steersimlib\GLWidget.obj
-         obj\Debug\steersimlib\ModuleManagerWidget.obj
-         obj\Debug\steersimlib\QtEngineController.obj
-         obj\Debug\steersimlib\QtEngineDriver.obj
-         obj\Debug\steersimlib\RecFilePlayerWidget.obj
-         obj\Debug\steersimlib\SteerSim.obj
-         obj\Debug\steersimlib\TestCasePlayerWidget.obj
-         "C:\Users\David\Documents\Visual Studio 2013\Projects\SteerSuite\build\bin\steerlib.lib"
-         "C:\Users\David\Documents\Visual Studio 2013\Projects\SteerSuite\build\bin\util.lib"
-         "C:\Users\David\Documents\Visual Studio 2013\Projects\SteerSuite\build\bin\glfw.lib"
-            Creating library ..\bin\steersimlib.lib and object ..\bin\steersimlib.exp
-         steersimlib.vcxproj -> C:\Users\David\Documents\Visual Studio 2013\Projects\SteerSuite\build\vs2012\..\bin\steersimlib.dll
-     1>Done Building Project "C:\Users\David\Documents\Visual Studio 2013\Projects\SteerSuite\build\vs2012\steersimlib.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:02.13
+﻿     Creating library ..\bin\steersimlib.lib and object ..\bin\steersimlib.exp
+  steersimlib.vcxproj -> C:\Users\dbeavers\Documents\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\steersimlib.dll
+  steersimlib.vcxproj -> ..\bin\steersimlib.pdb (Full PDB)

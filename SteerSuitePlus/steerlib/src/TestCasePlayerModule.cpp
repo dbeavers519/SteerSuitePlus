@@ -147,6 +147,11 @@ void TestCasePlayerModule::initializeSimulation() {
 
 }
 
+void TestCasePlayerModule::preprocessFrame(float timeStamp, float dt, unsigned int frameNumber) {
+	// Check to see if any waiting agents are ready to join
+	_engine->checkWaitingAgents();
+}
+
 void TestCasePlayerModule::postprocessFrame(float timeStamp, float dt, unsigned int frameNumber) {
 #ifdef ENABLE_GUI
 #ifdef ENABLE_QT
