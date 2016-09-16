@@ -145,6 +145,12 @@ namespace SteerLib {
 		        std::vector<SteerLib::ObstacleInterface*> & obstacles,
 			SteerLib::EngineInterface *engineInfo) ;
 
+		void initOutput(const std::string & testCaseName);
+
+		void initOutput(FILE *fp);
+
+		//void writeAgentInformation();
+
     private:
         /// The name of the testcase
         std::string _testCaseName ;

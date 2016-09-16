@@ -16,6 +16,7 @@
 
 #include "interfaces/EngineInterface.h"
 #include "util/StateMachine.h"
+#include "testcaseio/TestCaseIO.h"
 
 #define KEY_PRESSED 1
 
@@ -304,6 +305,7 @@ namespace SteerLib {
 		SteerLib::PlanningDomainInterface * _pathPlanner;
 		std::set<SteerLib::ObstacleInterface*> _obstacles;
 		SteerLib::EngineControllerInterface * _engineController;
+		SteerLib::TestCaseWriter * _testCaseWriter;
 		//@}
 
 

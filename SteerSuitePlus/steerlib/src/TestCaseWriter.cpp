@@ -251,6 +251,7 @@ void TestCaseWriter::writeTestCaseToFile(FILE *fp,
 			fprintf(fp,"\t\t</%s>\n", goalType.c_str()) ;
 		}
 		fprintf(fp,"\t</goalSequence>\n") ;
+
 		fprintf(fp,"</agent>\n") ;
 	}
 		fprintf(fp,"</SteerBenchTestCase>\n") ;
@@ -410,13 +411,11 @@ void TestCaseWriter::writeTestCaseToFile(FILE *fp,
 			fprintf(fp,"\t\t</%s>\n", goalType.c_str()) ;
 		}
 		fprintf(fp,"\t</goalSequence>\n") ;
+
 		fprintf(fp,"</agent>\n") ;
 	}
-		fprintf(fp,"</SteerBenchTestCase>\n") ;
-	    
+	fprintf(fp, "</SteerBenchTestCase>\n");
 }
-
-// std::string BehaviorToXML
 
 void TestCaseWriter::writeTestCaseToFile(FILE *fp,
 	std::vector<SteerLib::AgentInitialConditions> & agents,
@@ -591,8 +590,30 @@ void TestCaseWriter::writeTestCaseToFile(FILE *fp,
 			fprintf(fp,"\t\t</%s>\n", goalType.c_str()) ;
 		}
 		fprintf(fp,"\t</goalSequence>\n") ;
+
 		fprintf(fp,"</agent>\n") ;
 	}
 		fprintf(fp,"</SteerBenchTestCase>\n") ;
 	    
+}
+
+void TestCaseWriter::initOutput(const std::string & testCaseName) {
+	// Create new filename
+	std::string testCaseFilename = testCaseName + ".xml";
+	// Attempt to open
+	FILE * fp = fopen(testCaseFilename.c_str(), "w");
+	if (!fp) {
+		fprintf(stderr, "TestCaseWriter::writeTestCaseToFile: ERROR: Cannot open file %s\n", testCaseFilename.c_str());
+		return;
+	}
+
+	_testCaseName = testCaseName;
+
+	initOutput(_testCaseName);
+}
+
+void TestCaseWriter::initOutput(FILE *fp) {
+	// Write header information
+
+	// Write obstacles
 }

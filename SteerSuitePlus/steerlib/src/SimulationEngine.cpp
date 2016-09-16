@@ -92,9 +92,14 @@ void SimulationEngine::init(SimulationOptions * options, SteerLib::EngineControl
 
 	_reset();
 
-
 	_options = options;
 	_engineController = engineController;
+
+	// Check if the user wants to output results
+	if (_options->engineOptions.outputResults == true) {
+		// If so, initialize the TestCaseWriter
+		_testCaseWriter = new SteerLib::TestCaseWriter();
+	}
 
 	Clock::ClockModeEnum clockMode;
 	if (_options->engineOptions.clockMode == "fixed-fast") {
