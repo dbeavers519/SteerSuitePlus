@@ -1,0 +1,6 @@
+09/19/16 SteerSuitePlus Changelog
+1. TestCaseReaderPrivate.cpp
+	- Added sim_real tag to _parseAgent()
+2. TestCaseWriter.cpp
+	- Implemented XML output of a simulation
+	- Added agent startTime output to all other Writing functions

@@ -249,6 +249,10 @@ void AgentInterface::updateMidTermPath()
 
 }
 
+std::vector<Util::Point> AgentInterface::getPositionList() {
+	return _positionList;
+}
+
 void AgentInterface::draw()
 {
 #ifdef ENABLE_GUI
@@ -339,6 +343,5 @@ void AgentInterface::draw()
 	if (_goalQueue.front().goalType == SteerLib::GOAL_TYPE_SEEK_STATIC_TARGET) {
 		Util::DrawLib::drawFlag(_goalQueue.front().targetLocation);
 	}
-
 #endif
 }

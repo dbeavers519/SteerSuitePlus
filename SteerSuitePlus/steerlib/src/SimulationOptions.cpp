@@ -149,6 +149,7 @@ using namespace Util;
 #define DEFAULT_MIN_VARIABLE_DT 0.001f
 #define DEFAULT_MAX_VARIABLE_DT 0.2f
 #define DEFAULT_CLOCK_MODE "fixed-fast"
+#define DEFAULT_OUTPUT false
 
 //====================================
 // SPATIAL DATABASE DEFAULTS
@@ -246,6 +247,7 @@ SimulationOptions::SimulationOptions()
 	engineOptions.minVariableDt = DEFAULT_MIN_VARIABLE_DT;
 	engineOptions.maxVariableDt = DEFAULT_MAX_VARIABLE_DT;
 	engineOptions.clockMode = DEFAULT_CLOCK_MODE;
+	engineOptions.outputResults = DEFAULT_OUTPUT;
 
 	spatialDatabaseOptions.name = DEFAULT_USE_DATABASE;
 
@@ -464,6 +466,7 @@ void SimulationOptions::_setupXMLStructure( Util::XMLParser & xmlOpts )
 	engineTag->createChildTag("minVariableDt", "The minimum time-step allowed when the clock is in \"variable-real-time\" mode.  If the proposed time-step is smaller, this value will be used instead, effectively limiting the max frame rate.", XML_DATA_TYPE_FLOAT, &engineOptions.minVariableDt);
 	engineTag->createChildTag("maxVariableDt", "The maximum time-step allowed when the clock is in \"variable-real-time\" mode.  If the proposed time-step is larger, this value will be used instead, at the expense of breaking synchronization between simulation time and real-time.", XML_DATA_TYPE_FLOAT, &engineOptions.maxVariableDt);
 	engineTag->createChildTag("clockMode", "can be either \"fixed-fast\" (fixed simulation frame rate, running as fast as possible), \"fixed-real-time\" (fixed simulation frame rate, running in real-time), or \"variable-real-time\" (variable simulation frame rate in real-time).", XML_DATA_TYPE_STRING, &engineOptions.clockMode);
+	engineTag->createChildTag("outputResults", "either true or false. If true, an altered XML file will be output.", XML_DATA_TYPE_BOOLEAN, &engineOptions.outputResults);
 
 	// spatial database stuff
 	spatialDatabaseTag->createChildTag("useDatabase", "Option to select the database type to use , ", XML_DATA_TYPE_STRING, &spatialDatabaseOptions.name);

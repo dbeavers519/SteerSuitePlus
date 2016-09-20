@@ -258,7 +258,6 @@ void initializeOptionsFromCommandLine( int argc, char **argv, SimulationOptions 
 	specialOpts.addOption("-listmodules", NULL, OPTION_DATA_TYPE_NO_DATA, 0, &listModulesAndExit, true);
 	specialOpts.parse(argc, argv, true, false);
 
-
 	// If a config file was specified, initialize options from it.
 	if (inputConfigFileName != "") {
 		simulationOptions.loadOptionsFromConfigFile(inputConfigFileName);
@@ -302,7 +301,6 @@ void initializeOptionsFromCommandLine( int argc, char **argv, SimulationOptions 
 		exit(0);
 	}
 
-
 	//
 	// parse the command line options.
 	//
@@ -323,7 +321,6 @@ void initializeOptionsFromCommandLine( int argc, char **argv, SimulationOptions 
 	std::string frameDumpDirectory = "";
 	std::string replayingFilename = "";
 	std::vector<std::string> modulesGivenOnCommandLine;
-
 
 	CommandLineParser opts;
 
@@ -348,7 +345,7 @@ void initializeOptionsFromCommandLine( int argc, char **argv, SimulationOptions 
 	opts.addOption( "-storeSimulation", &recordingFilename, OPTION_DATA_TYPE_STRING);
 	opts.addOption( "-storesimulation", &recordingFilename, OPTION_DATA_TYPE_STRING);
 	opts.addOption( "-playback", &replayingFilename, OPTION_DATA_TYPE_STRING);
-	opts.addOption( "-replay", &replayingFilename, OPTION_DATA_TYPE_STRING);
+	opts.addOption( "-replay", &replayingFilename, OPTION_DATA_TYPE_STRING); 
 
 	// The following several options can initialize the options data structure directly.
 	opts.addOption( "-numFrames", &simulationOptions.engineOptions.numFramesToSimulate, OPTION_DATA_TYPE_UNSIGNED_INT);
@@ -371,6 +368,8 @@ void initializeOptionsFromCommandLine( int argc, char **argv, SimulationOptions 
 	opts.addOption( "-parameterDemo", NULL, OPTION_DATA_TYPE_NO_DATA, 0, &simulationOptions.globalOptions.parameterDemo, true);
 	opts.addOption( "-noTweakBar", NULL, OPTION_DATA_TYPE_NO_DATA, 0, &simulationOptions.globalOptions.noTweakBar, true);
 	opts.addOption( "-dataFileName", &simulationOptions.globalOptions.dataFileName, OPTION_DATA_TYPE_STRING);
+	opts.addOption("-outputResults", NULL, OPTION_DATA_TYPE_NO_DATA, 0, &simulationOptions.engineOptions.outputResults, true);
+	opts.addOption("-outputresults", NULL, OPTION_DATA_TYPE_NO_DATA, 0, &simulationOptions.engineOptions.outputResults, true);
 
 	// Dummy option parsing for the special options, but these are used earlier and ignored at this point.
 	opts.addOption("-config", NULL, OPTION_DATA_TYPE_STRING);
@@ -378,14 +377,10 @@ void initializeOptionsFromCommandLine( int argc, char **argv, SimulationOptions 
 	// This will parse the command line and initialize all the above variables as appropriate.
 	opts.parse(argc, argv, true, true);
 
-
-
 	//
 	// NEXT: many of these command-line options need to be error-checked and "interpreted"
 	//   to initialize the simulationOptions data structure
 	//
-
-
 
 	// figure out which engine the user specified on the command line, or use the default.
 	// this code might seem "inflated", but actually it is an attempt to have user-friendly semantics
@@ -437,8 +432,6 @@ void initializeOptionsFromCommandLine( int argc, char **argv, SimulationOptions 
 		// in this case, leave the simulationOptions.globalOptions.engineDriver
 		// with the hard coded default.
 	}
-
-
 
 	//
 	// take care of some shortcut options; these will be overridden by module options if the user specified conflicting options in both places.
@@ -494,9 +487,6 @@ void initializeOptionsFromCommandLine( int argc, char **argv, SimulationOptions 
 		// add it to the list of startup modules; its a set so will only exist once, anyway.
 		simulationOptions.engineOptions.startupModules.insert(moduleName);
 	}
-
-
-
 
 	// If user requested to store a config file, do that and exit.
 	if (generateConfigFilename != "") {

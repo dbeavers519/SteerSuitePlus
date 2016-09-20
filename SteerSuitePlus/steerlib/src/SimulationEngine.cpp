@@ -92,7 +92,6 @@ void SimulationEngine::init(SimulationOptions * options, SteerLib::EngineControl
 
 	_reset();
 
-
 	_options = options;
 	_engineController = engineController;
 
@@ -394,7 +393,7 @@ void SimulationEngine::cleanupSimulation()
 	_engineState.transitionToState(ENGINE_STATE_UNLOADING_SIMULATION);
 
 	std::vector<SteerLib::ModuleInterface*>::iterator iter;
-	for ( iter = _modulesInExecutionOrder.begin(); iter != _modulesInExecutionOrder.end();  ++iter ) {
+	for (iter = _modulesInExecutionOrder.begin(); iter != _modulesInExecutionOrder.end(); ++iter) {
 		(*iter)->cleanupSimulation();
 	}
 

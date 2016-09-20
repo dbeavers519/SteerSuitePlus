@@ -71,6 +71,8 @@ namespace SteerLib {
 		virtual bool enabled() const = 0;
 		/// Returns a point representing the position of the agent.
 		virtual Util::Point position() const = 0;
+		/// Returns a list of all the positions of the agent
+		virtual std::vector<Util::Point> getPositionList();
 		/// Returns a vector that points in the direction the agent is facing; this can potentially be different than the direction the agent is moving.
 		virtual Util::Vector forward() const = 0;
 		/// Returns the velocity of the Agent.
@@ -190,6 +192,7 @@ namespace SteerLib {
 		virtual void updateLocalTarget2();
 		bool _enabled;
 		Util::Point _position;
+		std::vector<Util::Point> _positionList;
 		Util::Vector _velocity;
 		Util::Vector _forward; // normalized version of velocity
 		Util::Vector _prefVelocity; // This is the velocity the agent wants to be at

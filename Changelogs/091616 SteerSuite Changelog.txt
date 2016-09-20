@@ -1,0 +1,26 @@
+09/16/16 SteerSuite+ Changelog
+1. Removed uftcconverter
+2. SteerSim.cpp
+	- Added outputResults to command line options
+3. SimulationOptions.h
+	- Added outputResults flag
+	- Added _testCaseWriter object to global members
+	- Added testcaseio/TestCaseIO.h include
+4. SimulationOptions.cpp
+	- Added DEFAULT_OUTPUT under engine defaults
+	- Set default output results to DEFAULT_OUTPUT under engine options
+	- Added XML child tag under engine tags for outputResults
+	- Added check for outputResults in init()
+5. TestCaseIO.h
+	- Added initOutput()
+6. TestCaseWriter.cpp
+	- Added initOutput()
+7. AgentInterface.h
+	- Added getPositionList() method
+	- Added _positionList vector of Points
+8. AgentInterface.cpp
+	- Implemented getPositionList() method
+9. PPRAgent.cpp
+	- Added positionList clear in reset()
+		- Added initial position to list after clear
+	- Added positionList update at end of updateAI()

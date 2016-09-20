@@ -100,8 +100,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "steerbench", "steerbench.vc
 		{01E671E6-5810-BD4B-A2A0-F4AC47DBDD5C} = {01E671E6-5810-BD4B-A2A0-F4AC47DBDD5C}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uftcconverter", "..\TestCaseConverter\TestCaseConverter.vcxproj", "{B5D68B6A-E999-401F-B63B-4D46F1294177}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -246,14 +244,6 @@ Global
 		{049851F4-70EA-EC41-9B90-C40B35770787}.Release|Win32.Build.0 = Release|Win32
 		{049851F4-70EA-EC41-9B90-C40B35770787}.Release|x64.ActiveCfg = Release|x64
 		{049851F4-70EA-EC41-9B90-C40B35770787}.Release|x64.Build.0 = Release|x64
-		{B5D68B6A-E999-401F-B63B-4D46F1294177}.Debug|Win32.ActiveCfg = Debug|Win32
-		{B5D68B6A-E999-401F-B63B-4D46F1294177}.Debug|Win32.Build.0 = Debug|Win32
-		{B5D68B6A-E999-401F-B63B-4D46F1294177}.Debug|x64.ActiveCfg = Debug|x64
-		{B5D68B6A-E999-401F-B63B-4D46F1294177}.Debug|x64.Build.0 = Debug|x64
-		{B5D68B6A-E999-401F-B63B-4D46F1294177}.Release|Win32.ActiveCfg = Release|Win32
-		{B5D68B6A-E999-401F-B63B-4D46F1294177}.Release|Win32.Build.0 = Release|Win32
-		{B5D68B6A-E999-401F-B63B-4D46F1294177}.Release|x64.ActiveCfg = Release|x64
-		{B5D68B6A-E999-401F-B63B-4D46F1294177}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

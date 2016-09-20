@@ -262,6 +262,7 @@ namespace SteerLib {
 			float minVariableDt;
 			float maxVariableDt;
 			std::string clockMode;
+			bool outputResults;
 		};
 
 		struct GridDatabaseOptions {

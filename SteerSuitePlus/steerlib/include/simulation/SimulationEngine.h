@@ -16,6 +16,7 @@
 
 #include "interfaces/EngineInterface.h"
 #include "util/StateMachine.h"
+#include "testcaseio/TestCaseIO.h"
 
 #define KEY_PRESSED 1
 
@@ -193,6 +194,7 @@ namespace SteerLib {
 		virtual const OptionDictionary & getModuleOptions(const std::string & moduleName) { return _options->getModuleOptions(moduleName); }
 		virtual const SimulationOptions & getOptions() { return (*_options); }
 		virtual std::pair<std::vector<Util::Point>,std::vector<size_t> > getStaticGeometry();
+		virtual std::vector<SteerLib::AgentInitialConditions> getAgentInitialConditions() { return _agentInitialConditions; }
 
 		virtual bool isSimulationLoaded() { return _simulationLoaded; }
 		virtual bool isSimulationRunning() { return _simulationRunning; }
@@ -287,7 +289,7 @@ namespace SteerLib {
 		//@{
 		std::vector<SteerLib::AgentInterface*> _agents;
 		std::vector<std::pair<SteerLib::AgentInitialConditions, SteerLib::ModuleInterface *>> _waitList;
-		std::vector<SteerLib::AgentInitialConditions > _agentInitialConditions;
+		std::vector<SteerLib::AgentInitialConditions> _agentInitialConditions;
 		std::set<SteerLib::AgentInterface*> _selectedAgents;
 		std::map<SteerLib::AgentInterface*, SteerLib::ModuleInterface*> _agentOwners;
 		std::vector<SteerLib::AgentInitialConditions> _init_agents;

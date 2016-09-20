@@ -105,6 +105,12 @@ void GLFWEngineDriver::init(SimulationOptions * options)
 	_engine = new SimulationEngine();
 	_engine->init(_options, this);
 
+	// Check if the user wants to output results
+	if (_options->engineOptions.outputResults) {
+		// If so, initialize the TestCaseWriter
+		_testCaseWriter = new SteerLib::TestCaseWriter();
+	}
+
 	_frameSaver = new Util::FrameSaver();
 	// really just allows you to save multiple picutres without overwriting.
 	_frameSaver->StartRecord(1024);
@@ -296,6 +302,11 @@ void GLFWEngineDriver::run()
 		// glfwSetWindowTitle( getEngine()->getClock().getRealFps() << " fps" );
 	}
 
+	// Write test case to file
+	if (_options->engineOptions.outputResults) {
+		outputTestCase();
+	}
+
 	if (verbose) std::cout << "\rPostprocessing...\n";
 	_engine->postprocessSimulation();
 
@@ -449,7 +460,38 @@ void GLFWEngineDriver::dumpTestCase()
 	testCaseWriter.writeTestCaseToFile("test",_agents,_obstacles,_engine);
 }
 
+void GLFWEngineDriver::outputTestCase() {
+	// Create vectors for results
+	std::vector<SteerLib::AgentInitialConditions> _initialConditions;
+	std::vector<SteerLib::AgentInterface*> _agents;
+	std::vector<SteerLib::ObstacleInterface*> _obstacles;
+	std::string outputFilename;
+	int i;
 
+	// Get output filename
+	outputFilename = _options->moduleOptionsDatabase["testCasePlayer"]["testcase"];
+	outputFilename = outputFilename.substr(0, outputFilename.size() - 4);
+	outputFilename.append("Results");
+
+	// Get agent info
+	for (i = 0; i < _engine->getAgents().size(); i++) {
+		_agents.push_back(_engine->getAgents().at(i));
+	}
+
+	// Get initial conditions info
+	for (i = 0; i < _engine->getAgentInitialConditions().size(); i++) {
+		_initialConditions.push_back(_engine->getAgentInitialConditions().at(i));
+	}
+
+	// Get obstacle info
+	for (set<SteerLib::ObstacleInterface*>::const_iterator iter = _engine->getObstacles().begin(); iter != _engine->getObstacles().end(); iter++)
+	{
+		_obstacles.push_back((*iter));
+	}
+
+	// Write results
+	_testCaseWriter->writeTestCaseToFile(outputFilename, _initialConditions, _agents, _obstacles, _engine);
+}
 
 void GLFWEngineDriver::_findClosestAgentToMouse()
 {

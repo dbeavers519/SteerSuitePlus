@@ -123,6 +123,8 @@ void PPRAgent::reset(const SteerLib::AgentInitialConditions & initialConditions,
 	// _enabled = true;
 	AxisAlignedBox oldBounds(_position.x-_radius, _position.x+_radius, 0.0f, 0.0f, _position.z-_radius, _position.z+_radius);
 	_position = initialConditions.position;
+	_positionList.clear();
+	_positionList.push_back(_position);
 	_forward  = initialConditions.direction;
 	_radius   = initialConditions.radius;
 	_currentSpeed = initialConditions.speed;
@@ -348,6 +350,10 @@ void PPRAgent::updateAI(float timeStamp, float dt, unsigned int frameNumber)
 	// always do locomotion
 	doSteering();
 
+	// If output results, save position
+	if (_gEngine->getOptions().engineOptions.outputResults) {
+		_positionList.push_back(_position);
+	}
 	// DrawLib::drawLine(position(), oldPosition);
 }
 
