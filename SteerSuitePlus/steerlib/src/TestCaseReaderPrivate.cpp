@@ -385,6 +385,9 @@ void TestCaseReaderPrivate::_parseAgent(const ticpp::Element * subRoot)
 		else if (childTagName == "goalSequence") {
 			_parseGoalSequence(&(*child), newAgent.goals);
 		}
+		else if (childTagName == "sim_real") {
+			// Ignore sim_real tag (contains agent locations at given frames)
+		}
 		else {
 			throw GenericException("Unexpected tag <" + childTagName + "> found on line " + toString(child->Row()) + "\n");
 		}

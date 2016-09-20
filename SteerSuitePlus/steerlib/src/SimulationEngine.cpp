@@ -95,12 +95,6 @@ void SimulationEngine::init(SimulationOptions * options, SteerLib::EngineControl
 	_options = options;
 	_engineController = engineController;
 
-	// Check if the user wants to output results
-	if (_options->engineOptions.outputResults == true) {
-		// If so, initialize the TestCaseWriter
-		_testCaseWriter = new SteerLib::TestCaseWriter();
-	}
-
 	Clock::ClockModeEnum clockMode;
 	if (_options->engineOptions.clockMode == "fixed-fast") {
 		clockMode = Clock::CLOCK_MODE_FIXED_AS_FAST_AS_POSSIBLE;
@@ -399,7 +393,7 @@ void SimulationEngine::cleanupSimulation()
 	_engineState.transitionToState(ENGINE_STATE_UNLOADING_SIMULATION);
 
 	std::vector<SteerLib::ModuleInterface*>::iterator iter;
-	for ( iter = _modulesInExecutionOrder.begin(); iter != _modulesInExecutionOrder.end();  ++iter ) {
+	for (iter = _modulesInExecutionOrder.begin(); iter != _modulesInExecutionOrder.end(); ++iter) {
 		(*iter)->cleanupSimulation();
 	}
 

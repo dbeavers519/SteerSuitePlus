@@ -1,32 +1,35 @@
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\bin\navmesh.pdb
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\bin\navmesh.idb
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\chunkytrimesh.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\convexvolumetool.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\crowdtool.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\imgui.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\imguirendergl.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\inputgeom.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\main.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\mesh.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\meshloaderobj.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmeshmodule.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmeshprunetool.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmeshtestertool.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\offmeshconnectiontool.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\perftimer.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\recasenavmeshplanner.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\sample.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\sampleinterfaces.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\sample_solomesh.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\timer.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\valuehistory.obj
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmesh.tlog\cl.command.1.tlog
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmesh.tlog\cl.read.1.tlog
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmesh.tlog\cl.write.1.tlog
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmesh.tlog\link-cvtres.read.1.tlog
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmesh.tlog\link-cvtres.write.1.tlog
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmesh.tlog\link-rc.read.1.tlog
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmesh.tlog\link-rc.write.1.tlog
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmesh.tlog\link.command.1.tlog
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmesh.tlog\link.read.1.tlog
-c:\users\david\documents\visual studio 2013\projects\steersuite\build\vs2012\obj\debug\navmesh\navmesh.tlog\link.write.1.tlog
+c:\development\workspace\steersuiteplus\steersuiteplus\build\bin\navmesh.pdb
+c:\development\workspace\steersuiteplus\steersuiteplus\build\bin\navmesh.idb
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\chunkytrimesh.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\convexvolumetool.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\imgui.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\inputgeom.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\meshloaderobj.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmeshprunetool.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\perftimer.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\sample.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\timer.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\valuehistory.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\crowdtool.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\main.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\mesh.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmeshmodule.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmeshtestertool.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\offmeshconnectiontool.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\recasenavmeshplanner.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\sampleinterfaces.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\sample_solomesh.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\imguirendergl.obj
+c:\development\workspace\steersuiteplus\steersuiteplus\build\bin\navmesh.ilk
+c:\development\workspace\steersuiteplus\steersuiteplus\build\bin\navmesh.dll
+c:\development\workspace\steersuiteplus\steersuiteplus\build\bin\navmesh.lib
+c:\development\workspace\steersuiteplus\steersuiteplus\build\bin\navmesh.exp
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmesh.vcxprojresolveassemblyreference.cache
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\..\bin\navmesh.dll
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmesh.tlog\cl.command.1.tlog
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmesh.tlog\cl.read.1.tlog
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmesh.tlog\cl.write.1.tlog
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmesh.tlog\link.command.1.tlog
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmesh.tlog\link.read.1.tlog
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmesh.tlog\link.write.1.tlog
+c:\development\workspace\steersuiteplus\steersuiteplus\build\vs2012\obj\debug\navmesh\navmesh.tlog\navmesh.write.1u.tlog

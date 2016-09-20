@@ -1,2 +1,39 @@
-﻿  glfw.vcxproj -> C:\Users\dbeavers\Documents\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\glfw.dll
+﻿  win32_window.c
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\win32\win32_window.c(444): warning C4389: '==': signed/unsigned mismatch
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\win32\win32_window.c(1306): warning C4100: 'height': unreferenced formal parameter
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\win32\win32_window.c(1306): warning C4100: 'width': unreferenced formal parameter
+  win32_time.c
+  win32_thread.c
+  win32_joystick.c
+  win32_init.c
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\win32\win32_init.c(237): warning C4996: 'GetVersionExA': was declared deprecated
+  c:\program files (x86)\windows kits\8.1\include\um\sysinfoapi.h(433): note: see declaration of 'GetVersionExA'
+  win32_glext.c
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\win32\win32_glext.c(80): warning C4054: 'type cast': from function pointer 'PROC' to data pointer 'void *'
+  win32_fullscreen.c
+  win32_enable.c
+  win32_dllmain.c
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\win32\win32_dllmain.c(40): warning C4100: 'reserved': unreferenced formal parameter
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\win32\win32_dllmain.c(40): warning C4100: 'reason': unreferenced formal parameter
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\win32\win32_dllmain.c(40): warning C4100: 'instance': unreferenced formal parameter
+  window.c
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\window.c(580): warning C4055: 'type cast': from data pointer 'void *' to function pointer 'PFNGLGETSTRINGIPROC'
+  time.c
+  thread.c
+  tga.c
+  stream.c
+  joystick.c
+  input.c
+  init.c
+  image.c
+  glext.c
+  fullscreen.c
+  Generating Code...
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\image.c(620): warning C4701: potentially uninitialized local variable 'GenMipMap' used
+c:\development\workspace\steersuiteplus\steersuiteplus\external\glfw\lib\win32\win32_fullscreen.c(281): warning C4701: potentially uninitialized local variable 'm2' used
+  Compiling...
+  enable.c
+  Generating Code...
+     Creating library ..\bin\glfw.lib and object ..\bin\glfw.exp
+  glfw.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\glfw.dll
   glfw.vcxproj -> ..\bin\glfw.pdb (Full PDB)

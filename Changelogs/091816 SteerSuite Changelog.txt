@@ -1,0 +1,13 @@
+09/18/16 SteerSuitePlus Changelog
+1. TestCaseIO.h
+	- Removed initOutput()
+	- Added writeTestCaseToFile(string, ...) and writeTestCaseToFile(FILE, ...)
+2. TestCaseWriter.cpp
+	- Implemented writeTestCaseToFile(string, ...) and writeTestCaseToFile(FILE, ...)
+3. GLFWEngineDriver.h
+	- Added outputTestCase()
+4. GLFWEngineDriver.cpp
+	- Implemented outputTestCase()
+5. SimulationEngine.cpp & .h
+	- Moved _testCaseWriter to GLFWEngineDriver
+	- Added getInitialConditions()

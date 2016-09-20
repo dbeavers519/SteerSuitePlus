@@ -1,1 +1,11 @@
-﻿  DetourCrowd.vcxproj -> C:\Users\dbeavers\Documents\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\DetourCrowd.lib
+﻿cl : Command line warning D9002: ignoring unknown option '-std=c++0x'
+cl : Command line warning D9002: ignoring unknown option '-ggdb'
+cl : Command line warning D9002: ignoring unknown option '-fPIC'
+  DetourProximityGrid.cpp
+  DetourPathQueue.cpp
+  DetourPathCorridor.cpp
+  DetourObstacleAvoidance.cpp
+  DetourLocalBoundary.cpp
+  DetourCrowd.cpp
+  Generating Code...
+  DetourCrowd.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\DetourCrowd.lib

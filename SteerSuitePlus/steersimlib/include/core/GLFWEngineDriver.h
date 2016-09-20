@@ -47,6 +47,7 @@ public:
 	SteerLib::SimulationEngine * getEngine() { return _engine; };
 	void writeScreenCapture();
 	void dumpTestCase();
+	void outputTestCase();
 
 	void processWindowResizedEvent(int width, int height);
 	void processKeyPressEvent(int key, int action);
@@ -104,7 +105,7 @@ protected:
 	bool _done;
 
 	SteerLib::SimulationOptions * _options;
-
+	SteerLib::TestCaseWriter * _testCaseWriter;
 	Util::FrameSaver * _frameSaver;
 
 
