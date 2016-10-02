@@ -51,7 +51,6 @@ void TestCaseReader::readTestCaseFromFile( const std::string & testCaseFilename 
 	// recursively parse each tag.
 	_parseTestCaseDOM( root );
 
-
 	// 
 	// then, initialize agents and obstacles based on the test case specs.
 	//
@@ -81,6 +80,10 @@ void TestCaseReader::readTestCaseFromFile( const std::string & testCaseFilename 
 	}
 
 
+
+#ifdef _DEBUG
+	std::cout << "num raw agents: " << _rawAgents.size() << std::endl;
+#endif
 	// Then add all non-random agents, making sure they don't overlap anything.
 	// "non-random" is for position; random directions and goals are OK.
 	for (unsigned int i=0; i<_rawAgents.size(); i++) {

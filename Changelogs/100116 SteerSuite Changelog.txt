@@ -1,0 +1,19 @@
+10/01/16 SteerSuite Changelog
+1. TestCaseIOPrivate.h
+	- Added scale variable to TestCaseHeader class
+2. TestCaseReaderPrivate.cpp
+	- Added scale tag reading to _parseHeader()
+	- Added scaling in _parseHeader()
+	- Added scaling in _parseCameraView()
+	- Added scaling in _parseAgent()
+	- Added scaling in _parseGoalSequence()
+	- Added scaling in _parseAgentEmitter()
+	- Added scaling in _parseAgentRegion()
+	- Added scaling in _parseBoxObstacle()
+	- Added scaling in _parsePolygonObstacle()
+	- Added scaling in _parseOrientedBoxObstacle()
+	- Added scaling in _parseOrientedWallObstacle()
+	- Added scaling in _parseCircleObstacle()
+	- Added scaling in _parseObstacleRegion()
+3. TestCaseIO.h
+	- Added getScale() to TestCaseReader class

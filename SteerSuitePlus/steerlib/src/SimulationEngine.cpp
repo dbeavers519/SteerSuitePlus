@@ -546,7 +546,7 @@ bool SimulationEngine::_simulateOneStep()
 
 	// indicate that we're done (return false) if all agents were disabled in this frame.
 	// Disabling exit when all agents have finished simulating. 
-	if (numDisabledAgents == _agents.size())
+	if (numDisabledAgents == (_agents.size() + _waitList.size()))
 		return false;
 
 	// Force stop by some other module
