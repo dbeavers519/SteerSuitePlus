@@ -80,6 +80,8 @@ namespace SteerLib {
 		inline const std::string & getVersion() { return _header.version; }
 		/// Returns a human-readable string desciribing the criteria for passing a particular test case; In the future this criteria may become more elaborate and automated.
 		inline const std::string & getPassingCriteria() { return _header.passingCriteria; }
+		/// Returns the world scale in meters per unit
+		inline const float & getScale() { return _header.scale; }
 		/// Returns a data structure containing information about one suggested camera view.
 		inline const CameraView & getCameraView(unsigned int cameraIndex) { return _cameraViews[cameraIndex]; }
 		/// Returns the world boundaries specified by the test case.

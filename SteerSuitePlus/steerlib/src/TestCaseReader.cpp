@@ -51,7 +51,6 @@ void TestCaseReader::readTestCaseFromFile( const std::string & testCaseFilename 
 	// recursively parse each tag.
 	_parseTestCaseDOM( root );
 
-
 	// 
 	// then, initialize agents and obstacles based on the test case specs.
 	//

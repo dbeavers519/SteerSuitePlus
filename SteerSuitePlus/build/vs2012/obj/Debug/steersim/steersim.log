@@ -15,12 +15,12 @@ c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\util\sta
 c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\interfaces\obstacleinterface.h(27): warning C4100: 'frameNumber': unreferenced formal parameter
 c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\interfaces\obstacleinterface.h(27): warning C4100: 'dt': unreferenced formal parameter
 c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\interfaces\obstacleinterface.h(27): warning C4100: 'timeStamp': unreferenced formal parameter
-c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(97): warning C4100: 't': unreferenced formal parameter
-c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(97): warning C4100: 'r': unreferenced formal parameter
-c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(98): warning C4100: 'radius': unreferenced formal parameter
-c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(98): warning C4100: 'p': unreferenced formal parameter
-c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(99): warning C4100: 'radius': unreferenced formal parameter
-c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(99): warning C4100: 'p': unreferenced formal parameter
+c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(99): warning C4100: 't': unreferenced formal parameter
+c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(99): warning C4100: 'r': unreferenced formal parameter
+c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(100): warning C4100: 'radius': unreferenced formal parameter
+c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(100): warning C4100: 'p': unreferenced formal parameter
+c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(101): warning C4100: 'radius': unreferenced formal parameter
+c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\testcaseio\testcaseioprivate.h(101): warning C4100: 'p': unreferenced formal parameter
 c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\interfaces\agentinterface.h(110): warning C4100: 'item': unreferenced formal parameter
 c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\interfaces\agentinterface.h(135): warning C4100: 'timeStamp': unreferenced formal parameter
 c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\interfaces\agentinterface.h(135): warning C4100: 'directiontToRightOfAgent': unreferenced formal parameter
@@ -137,5 +137,6 @@ c:\program files (x86)\microsoft visual studio 14.0\vc\include\gl\freeglut_std.h
 c:\program files (x86)\microsoft visual studio 14.0\vc\include\gl\freeglut_std.h(625): warning C4505: 'glutCreateWindow_ATEXIT_HACK': unreferenced local function has been removed
 c:\program files (x86)\microsoft visual studio 14.0\vc\include\gl\freeglut_std.h(627): warning C4505: 'glutCreateMenu_ATEXIT_HACK': unreferenced local function has been removed
 c:\development\workspace\steersuiteplus\steersuiteplus\steerlib\include\interfaces\agentinterface.h(113): warning C4702: unreachable code
+     Creating library ..\bin\steersim.lib and object ..\bin\steersim.exp
   steersim.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\steersim.exe
   steersim.vcxproj -> ..\bin\steersim.pdb (Full PDB)
