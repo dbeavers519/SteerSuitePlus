@@ -48,7 +48,7 @@ namespace SteerLib {
 		Util::AxisAlignedBox worldBounds;
 		/// For now, just a human-readable string describing the passing criteria; eventually will be more elaborate.
 		std::string passingCriteria;
-		/// World scale in meters per unit
+		/// Scale factor for the test case
 		float scale;
 	};
 
@@ -360,6 +360,7 @@ namespace SteerLib {
 		/// Reads a Behaviour object from the xml data
 		void _getBehaviorFromXMLElement(const ticpp::Element * subRoot, Behaviour * behavior);
 		//@}
+
 		/// @name Helper functions to set up initial conditions
 		//@{
 		void _initObstacleInitialConditions( SteerLib::BoxObstacleInitialConditions & o, const Util::AxisAlignedBox & bounds );

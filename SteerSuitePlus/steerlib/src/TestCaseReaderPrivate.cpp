@@ -248,7 +248,7 @@ void TestCaseReaderPrivate::_parseTestCaseDOM(const ticpp::Element * root)
 		}
 		else if (headerSpecified) {
 			if (childTagName == "suggestedCameraView") {
-				_parseCameraView(&(*child));
+				_parseCameraView(&(*child)); 
 			}
 			else if (childTagName == "agent") {
 				_parseAgent(&(*child)); 
@@ -322,14 +322,15 @@ void TestCaseReaderPrivate::_parseHeader(const ticpp::Element * subRoot)
 		else {
 			throw GenericException("Unexpected tag <" + childTagName + "> found on line " + toString(child->Row()) + "\n");
 		}
+
+		// Scale world bounds
+		_header.worldBounds.xmin /= _header.scale;
+		_header.worldBounds.xmax /= _header.scale;
+		_header.worldBounds.ymin /= _header.scale;
+		_header.worldBounds.ymax /= _header.scale;
+		_header.worldBounds.zmin /= _header.scale;
+		_header.worldBounds.zmax /= _header.scale;
 	}
-	// Scale world bounds
-	_header.worldBounds.xmin /= _header.scale;
-	_header.worldBounds.xmax /= _header.scale;
-	_header.worldBounds.ymin /= _header.scale;
-	_header.worldBounds.ymax /= _header.scale;
-	_header.worldBounds.zmin /= _header.scale;
-	_header.worldBounds.zmax /= _header.scale;
 }
 
 void TestCaseReaderPrivate::_parseCameraView(const ticpp::Element * subRoot)
@@ -369,7 +370,6 @@ void TestCaseReaderPrivate::_parseCameraView(const ticpp::Element * subRoot)
 			throw GenericException("Unexpected tag <" + childTagName + "> found on line " + toString(child->Row()) + "\n");
 		}
 	}
-
 	// Scale pos and lookat
 	cvi.position.x /= _header.scale;
 	cvi.position.y /= _header.scale;
@@ -411,6 +411,7 @@ void TestCaseReaderPrivate::_parseAgent(const ticpp::Element * subRoot)
 			throw GenericException("Unexpected tag <" + childTagName + "> found on line " + toString(child->Row()) + "\n");
 		}
 	}
+
 	// Scale pos
 	newAgent.position.x /= _header.scale;
 	newAgent.position.y /= _header.scale;
@@ -510,7 +511,7 @@ void TestCaseReaderPrivate::_parseBoxObstacle(const ticpp::Element * subRoot)
 	obst->regionBounds = _header.worldBounds;
 	obst->size = 0.0f;
 
-	// Scale obstacle bounds
+	// Scale box
 	obst->obstacleBounds.xmin /= _header.scale;
 	obst->obstacleBounds.xmax /= _header.scale;
 	obst->obstacleBounds.ymin /= _header.scale;
@@ -632,7 +633,7 @@ void TestCaseReaderPrivate::_parseOrientedWallObstacle(const ticpp::Element * su
 		}
 	}
 
-	// Scale size, pos, and doorway
+	// Scale wall
 	obst->size.x /= _header.scale;
 	obst->size.y /= _header.scale;
 	obst->size.z /= _header.scale;
@@ -698,7 +699,7 @@ void TestCaseReaderPrivate::_parseCircleObstacle(const ticpp::Element * subRoot)
 		}
 	}
 
-	// Scale radius, height, and pos
+	// Scale circle obstacle
 	obst->radius /= _header.scale;
 
 	obst->height /= _header.scale;
@@ -748,7 +749,7 @@ void TestCaseReaderPrivate::_parseObstacleRegion(const ticpp::Element * subRoot)
 		}
 	}
 
-	// Scale obstacle size, height, and region
+	// Scale region
 	obst->size /= _header.scale;
 
 	obst->height /= _header.scale;
@@ -824,8 +825,7 @@ void TestCaseReaderPrivate::_parseGoalSequence(const ticpp::Element * subRoot, s
 
 			if (specName == "targetLocation") {
 				_getXYZOrRandomFromXMLElement(&(*goalSpecs), newGoal.targetLocation, newGoal.targetIsRandom);
-
-				// Scale target location
+				// Scale loc
 				newGoal.targetLocation.x /= _header.scale;
 				newGoal.targetLocation.y /= _header.scale;
 				newGoal.targetLocation.z /= _header.scale;
@@ -854,7 +854,7 @@ void TestCaseReaderPrivate::_parseGoalSequence(const ticpp::Element * subRoot, s
 			{
 				newGoal.targetRegion = _getBoundsFromXMLElement(&(*goalSpecs));
 
-				// Scale region bounds
+				// Scale region
 				newGoal.targetRegion.xmin /= _header.scale;
 				newGoal.targetRegion.xmax /= _header.scale;
 				newGoal.targetRegion.ymin /= _header.scale;
@@ -888,7 +888,9 @@ void TestCaseReaderPrivate::_parseGoalSequence(const ticpp::Element * subRoot, s
 		}
 
 		goals.push_back(newGoal);
+
 	}
+
 }
 
 /*
@@ -1000,6 +1002,9 @@ void TestCaseReaderPrivate::_parseInitialConditions(const ticpp::Element * subRo
 		*/
 	}
 }
+
+
+
 
 
 void TestCaseReaderPrivate::_initObstacleInitialConditions( BoxObstacleInitialConditions & o, const AxisAlignedBox & bounds )

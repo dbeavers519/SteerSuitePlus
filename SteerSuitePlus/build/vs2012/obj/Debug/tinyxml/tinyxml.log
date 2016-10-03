@@ -4,5 +4,6 @@
   tinystr.cpp
   ticpp.cpp
   Generating Code...
-  tinyxml.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\tinyxml.dll
+  LINK : ..\bin\tinyxml.dll not found or not built by the last incremental link; performing full link
+  tinyxml.vcxproj -> C:\Development\Workspace\SteerSuitePlusOld\SteerSuitePlus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\SteerSuitePlus\build\vs2012\..\bin\tinyxml.dll
   tinyxml.vcxproj -> ..\bin\tinyxml.pdb (Full PDB)

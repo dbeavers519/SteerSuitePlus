@@ -648,6 +648,7 @@ void TestCaseWriter::writeTestCaseToFile(FILE *fp,
 
 	fprintf(fp, "<header>\n\t<version>1.0</version>\n");
 	fprintf(fp, "\t<name>%s</name>\n", _testCaseName.c_str());
+	fprintf(fp, "\t<scale>%f</scale>\n", 1.0);
 
 	/// write the world bounds
 	float originX = grid->getOriginX();

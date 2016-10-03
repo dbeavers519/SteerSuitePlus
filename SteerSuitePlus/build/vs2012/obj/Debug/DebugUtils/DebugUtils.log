@@ -6,4 +6,4 @@ cl : Command line warning D9002: ignoring unknown option '-fPIC'
   DetourDebugDraw.cpp
   DebugDraw.cpp
   Generating Code...
-  DebugUtils.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\DebugUtils.lib
+  DebugUtils.vcxproj -> C:\Development\Workspace\SteerSuitePlusOld\SteerSuitePlus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\SteerSuitePlus\build\vs2012\..\bin\DebugUtils.lib
