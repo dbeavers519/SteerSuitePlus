@@ -8,4 +8,4 @@ cl : Command line warning D9002: ignoring unknown option '-fPIC'
   DetourCommon.cpp
   DetourAlloc.cpp
   Generating Code...
-  Detour.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\Detour.lib
+  Detour.vcxproj -> C:\Development\Workspace\SteerSuitePlusOld\SteerSuitePlus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\SteerSuitePlus\build\vs2012\..\bin\Detour.lib

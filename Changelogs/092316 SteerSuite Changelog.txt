@@ -1,4 +1,0 @@
-09/23/16 SteerSuite Changelog
-
-1. SimulationEngine.cpp
-	- Simulation ends when numDisabledAgents == _agents.size() + _waitList.size() in _simulateOneStep()

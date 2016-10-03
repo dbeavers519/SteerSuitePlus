@@ -1,184 +1,185 @@
 ﻿  LogObject.cpp
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(24): warning C4251: 'DataItem::string': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'DataItem'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(24): warning C4251: 'DataItem::string': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'DataItem'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(96): warning C4251: 'LogObject::_record': class 'std::vector<DataItem,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'LogObject'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(96): warning C4251: 'LogObject::_record': class 'std::vector<DataItem,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'LogObject'
           with
           [
               _Ty=DataItem
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(96): note: see declaration of 'std::vector<DataItem,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(96): note: see declaration of 'std::vector<DataItem,std::allocator<_Ty>>'
           with
           [
               _Ty=DataItem
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(55): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\src\logobject.cpp(35): note: see reference to function template instantiation 'void LogObject::addLogData<int>(T)' being compiled
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(55): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\src\logobject.cpp(35): note: see reference to function template instantiation 'void LogObject::addLogData<int>(T)' being compiled
           with
           [
               T=int
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(65): warning C4244: 'argument': conversion from 'int' to 'char', possible loss of data
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(47): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\src\logobject.cpp(61): note: see reference to function template instantiation 'void LogObject::addLogData<float>(T)' being compiled
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(65): warning C4244: 'argument': conversion from 'int' to 'char', possible loss of data
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(47): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\src\logobject.cpp(61): note: see reference to function template instantiation 'void LogObject::addLogData<float>(T)' being compiled
           with
           [
               T=float
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(60): warning C4244: '=': conversion from 'float' to '__int64', possible loss of data
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(65): warning C4244: 'argument': conversion from 'float' to 'char', possible loss of data
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(60): warning C4244: '=': conversion from 'float' to '__int64', possible loss of data
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(65): warning C4244: 'argument': conversion from 'float' to 'char', possible loss of data
   LogManager.cpp
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(24): warning C4251: 'DataItem::string': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'DataItem'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(24): warning C4251: 'DataItem::string': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'DataItem'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(96): warning C4251: 'LogObject::_record': class 'std::vector<DataItem,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'LogObject'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(96): warning C4251: 'LogObject::_record': class 'std::vector<DataItem,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'LogObject'
           with
           [
               _Ty=DataItem
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(96): note: see declaration of 'std::vector<DataItem,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(96): note: see declaration of 'std::vector<DataItem,std::allocator<_Ty>>'
           with
           [
               _Ty=DataItem
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(65): warning C4251: 'Logger::_fileStream': class 'std::basic_fstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(65): warning C4251: 'Logger::_fileStream': class 'std::basic_fstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'Logger'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(692): note: see declaration of 'std::basic_fstream<char,std::char_traits<char>>'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(66): warning C4251: 'Logger::_fileName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(66): warning C4251: 'Logger::_fileName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Logger'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(69): warning C4251: 'Logger::_fieldNames': class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(69): warning C4251: 'Logger::_fieldNames': class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
           with
           [
               _Ty=std::string
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\utilglobals.h(25): note: see declaration of 'std::vector<std::string,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\utilglobals.h(25): note: see declaration of 'std::vector<std::string,std::allocator<_Ty>>'
           with
           [
               _Ty=std::string
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(70): warning C4251: 'Logger::_dataTypes': class 'std::vector<DataType,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(70): warning C4251: 'Logger::_dataTypes': class 'std::vector<DataType,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
           with
           [
               _Ty=DataType
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(70): note: see declaration of 'std::vector<DataType,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(70): note: see declaration of 'std::vector<DataType,std::allocator<_Ty>>'
           with
           [
               _Ty=DataType
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logmanager.h(36): warning C4251: 'LogManager::_loggers': class 'std::map<std::string,Logger *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'LogManager'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logmanager.h(36): warning C4251: 'LogManager::_loggers': class 'std::map<std::string,Logger *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'LogManager'
           with
           [
               _Kty=std::string,
               _Ty=Logger *
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logmanager.h(36): note: see declaration of 'std::map<std::string,Logger *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logmanager.h(36): note: see declaration of 'std::map<std::string,Logger *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
           with
           [
               _Kty=std::string,
               _Ty=Logger *
           ]
   Logger.cpp
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(24): warning C4251: 'DataItem::string': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'DataItem'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(24): warning C4251: 'DataItem::string': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'DataItem'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(96): warning C4251: 'LogObject::_record': class 'std::vector<DataItem,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'LogObject'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(96): warning C4251: 'LogObject::_record': class 'std::vector<DataItem,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'LogObject'
           with
           [
               _Ty=DataItem
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(96): note: see declaration of 'std::vector<DataItem,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(96): note: see declaration of 'std::vector<DataItem,std::allocator<_Ty>>'
           with
           [
               _Ty=DataItem
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(65): warning C4251: 'Logger::_fileStream': class 'std::basic_fstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(65): warning C4251: 'Logger::_fileStream': class 'std::basic_fstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'Logger'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(692): note: see declaration of 'std::basic_fstream<char,std::char_traits<char>>'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(66): warning C4251: 'Logger::_fileName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(66): warning C4251: 'Logger::_fileName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Logger'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(69): warning C4251: 'Logger::_fieldNames': class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(69): warning C4251: 'Logger::_fieldNames': class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
           with
           [
               _Ty=std::string
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\utilglobals.h(25): note: see declaration of 'std::vector<std::string,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\utilglobals.h(25): note: see declaration of 'std::vector<std::string,std::allocator<_Ty>>'
           with
           [
               _Ty=std::string
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(70): warning C4251: 'Logger::_dataTypes': class 'std::vector<DataType,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(70): warning C4251: 'Logger::_dataTypes': class 'std::vector<DataType,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
           with
           [
               _Ty=DataType
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(70): note: see declaration of 'std::vector<DataType,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(70): note: see declaration of 'std::vector<DataType,std::allocator<_Ty>>'
           with
           [
               _Ty=DataType
           ]
   LogData.cpp
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(24): warning C4251: 'DataItem::string': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'DataItem'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(24): warning C4251: 'DataItem::string': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'DataItem'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(96): warning C4251: 'LogObject::_record': class 'std::vector<DataItem,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'LogObject'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(96): warning C4251: 'LogObject::_record': class 'std::vector<DataItem,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'LogObject'
           with
           [
               _Ty=DataItem
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logobject.h(96): note: see declaration of 'std::vector<DataItem,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logobject.h(96): note: see declaration of 'std::vector<DataItem,std::allocator<_Ty>>'
           with
           [
               _Ty=DataItem
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(65): warning C4251: 'Logger::_fileStream': class 'std::basic_fstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(65): warning C4251: 'Logger::_fileStream': class 'std::basic_fstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'Logger'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\iosfwd(692): note: see declaration of 'std::basic_fstream<char,std::char_traits<char>>'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(66): warning C4251: 'Logger::_fileName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(66): warning C4251: 'Logger::_fileName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Logger'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(69): warning C4251: 'Logger::_fieldNames': class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(69): warning C4251: 'Logger::_fieldNames': class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
           with
           [
               _Ty=std::string
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\utilglobals.h(25): note: see declaration of 'std::vector<std::string,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\utilglobals.h(25): note: see declaration of 'std::vector<std::string,std::allocator<_Ty>>'
           with
           [
               _Ty=std::string
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(70): warning C4251: 'Logger::_dataTypes': class 'std::vector<DataType,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(70): warning C4251: 'Logger::_dataTypes': class 'std::vector<DataType,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'Logger'
           with
           [
               _Ty=DataType
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logger.h(70): note: see declaration of 'std::vector<DataType,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logger.h(70): note: see declaration of 'std::vector<DataType,std::allocator<_Ty>>'
           with
           [
               _Ty=DataType
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logdata.h(34): warning C4251: 'LogData::logData': class 'std::vector<LogObject *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'LogData'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logdata.h(34): warning C4251: 'LogData::logData': class 'std::vector<LogObject *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'LogData'
           with
           [
               _Ty=LogObject *
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logdata.h(26): note: see declaration of 'std::vector<LogObject *,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logdata.h(26): note: see declaration of 'std::vector<LogObject *,std::allocator<_Ty>>'
           with
           [
               _Ty=LogObject *
           ]
-c:\development\workspace\steersuiteplus\steersuiteplus\util\src\logdata.cpp(33): warning C4458: declaration of 'log' hides class member
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logdata.h(33): note: see declaration of 'LogData::log'
-c:\development\workspace\steersuiteplus\steersuiteplus\util\src\logdata.cpp(41): warning C4458: declaration of 'logData' hides class member
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\logdata.h(34): note: see declaration of 'LogData::logData'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\src\logdata.cpp(33): warning C4458: declaration of 'log' hides class member
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logdata.h(33): note: see declaration of 'LogData::log'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\src\logdata.cpp(41): warning C4458: declaration of 'logData' hides class member
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\logdata.h(34): note: see declaration of 'LogData::logData'
   AStarLiteOpen.cpp
   AStarLiteNode.cpp
   AStarLiteClose.cpp
   AStarLite.cpp
-c:\development\workspace\steersuiteplus\steersuiteplus\util\include\astar\astarlite.h(34): warning C4251: 'AStarLite::m_path': class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'AStarLite'
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\astar\astarlite.h(34): warning C4251: 'AStarLite::m_path': class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'AStarLite'
           with
           [
               _Ty=int
           ]
-  c:\development\workspace\steersuiteplus\steersuiteplus\util\include\astar\astarliteclose.h(28): note: see declaration of 'std::vector<int,std::allocator<_Ty>>'
+  c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\include\astar\astarliteclose.h(28): note: see declaration of 'std::vector<int,std::allocator<_Ty>>'
           with
           [
               _Ty=int
           ]
   Generating Code...
-c:\development\workspace\steersuiteplus\steersuiteplus\util\src\logger.cpp(273): warning C4701: potentially uninitialized local variable 'dataType' used
+c:\development\workspace\steersuiteplusold\steersuiteplus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\steersuiteplus\util\src\logger.cpp(273): warning C4701: potentially uninitialized local variable 'dataType' used
+  LINK : ..\bin\util.dll not found or not built by the last incremental link; performing full link
      Creating library ..\bin\util.lib and object ..\bin\util.exp
-  util.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\util.dll
+  util.vcxproj -> C:\Development\Workspace\SteerSuitePlusOld\SteerSuitePlus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\SteerSuitePlus\build\vs2012\..\bin\util.dll
   util.vcxproj -> ..\bin\util.pdb (Full PDB)
