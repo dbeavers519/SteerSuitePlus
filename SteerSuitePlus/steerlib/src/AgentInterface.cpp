@@ -249,7 +249,7 @@ void AgentInterface::updateMidTermPath()
 
 }
 
-std::vector<Util::Point> AgentInterface::getPositionList() {
+std::vector<std::pair<int, Util::Point>> AgentInterface::getPositionList() {
 	return _positionList;
 }
 

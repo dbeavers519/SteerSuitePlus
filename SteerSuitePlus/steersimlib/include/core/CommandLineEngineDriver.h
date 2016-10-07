@@ -24,6 +24,7 @@ public:
 	void run();
 	const char * getData();
 	LogData * getLogData();
+	void outputTestCase();
 
 	/// @name The EngineControllerInterface
 	/// @brief The CommandLineEngineDriver does not support any of the engine controls.
@@ -44,6 +45,8 @@ public:
 protected:
 	bool _alreadyInitialized;
 	SteerLib::SimulationEngine * _engine;
+	SteerLib::TestCaseWriter * _testCaseWriter;
+	SteerLib::SimulationOptions * _options;
 
 private:
 	// These functions are kept here to protect us from mangling the instance.

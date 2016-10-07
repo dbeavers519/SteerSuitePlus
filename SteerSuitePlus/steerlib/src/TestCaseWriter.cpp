@@ -696,14 +696,27 @@ void TestCaseWriter::writeTestCaseToFile(FILE *fp,
 		else	//for SteerLib::BoxObstacle and other obstacles
 		{
 			const Util::AxisAlignedBox & box = obs->getBounds();
-			fprintf(fp, "\t<obstacle>\n");
-			fprintf(fp, "\t\t<xmin>%f</xmin>\n", box.xmin);
-			fprintf(fp, "\t\t<xmax>%f</xmax>\n", box.xmax);
-			fprintf(fp, "\t\t<ymin>%f</ymin>\n", box.ymin);
-			fprintf(fp, "\t\t<ymax>%f</ymax>\n", box.ymax);
-			fprintf(fp, "\t\t<zmin>%f</zmin>\n", box.zmin);
-			fprintf(fp, "\t\t<zmax>%f</zmax>\n", box.zmax);
-			fprintf(fp, "\t</obstacle>\n");
+			if (typeid(*obs) == typeid(CircleObstacle)) {
+				fprintf(fp, "\t<circleObstacle>\n");
+				fprintf(fp, "\t\t<radius>%f</radius>\n", abs(box.xmax - box.xmin) / 2.0);
+				fprintf(fp, "\t\t<height>%f</height>\n", abs(box.ymax - box.ymin));
+				fprintf(fp, "\t\t<position>\n");
+				fprintf(fp, "\t\t\t<x>%f</x>\n", box.xmin + (abs(box.xmax - box.xmin) / 2.0));
+				fprintf(fp, "\t\t\t<y>0</y>\n");
+				fprintf(fp, "\t\t\t<z>%f</z>\n", box.zmin + (abs(box.zmax - box.zmin) / 2.0));
+				fprintf(fp, "\t\t</position>\n");
+				fprintf(fp, "\t</circleObstacle>\n");
+			}
+			else {
+				fprintf(fp, "\t<obstacle>\n");
+				fprintf(fp, "\t\t<xmin>%f</xmin>\n", box.xmin);
+				fprintf(fp, "\t\t<xmax>%f</xmax>\n", box.xmax);
+				fprintf(fp, "\t\t<ymin>%f</ymin>\n", box.ymin);
+				fprintf(fp, "\t\t<ymax>%f</ymax>\n", box.ymax);
+				fprintf(fp, "\t\t<zmin>%f</zmin>\n", box.zmin);
+				fprintf(fp, "\t\t<zmax>%f</zmax>\n", box.zmax);
+				fprintf(fp, "\t</obstacle>\n");
+			}
 		}
 	}
 
@@ -801,10 +814,10 @@ void TestCaseWriter::writeTestCaseToFile(FILE *fp,
 		fprintf(fp, "\t<sim_real>\n");
 		for (int j = 0; j < agents[i]->getPositionList().size(); j++) {
 			fprintf(fp, "\t\t<frame>\n");
-			fprintf(fp, "\t\t\t<number>%d</number>\n", j);
-			fprintf(fp, "\t\t\t<x>%f</x>\n", agents[i]->getPositionList().at(j).x);
-			fprintf(fp, "\t\t\t<y>%f</y>\n", agents[i]->getPositionList().at(j).y);
-			fprintf(fp, "\t\t\t<z>%f</z>\n", agents[i]->getPositionList().at(j).z);
+			fprintf(fp, "\t\t\t<number>%d</number>\n", agents[i]->getPositionList().at(j).first);
+			fprintf(fp, "\t\t\t<x>%f</x>\n", agents[i]->getPositionList().at(j).second.x);
+			fprintf(fp, "\t\t\t<y>%f</y>\n", agents[i]->getPositionList().at(j).second.y);
+			fprintf(fp, "\t\t\t<z>%f</z>\n", agents[i]->getPositionList().at(j).second.z);
 			fprintf(fp, "\t\t</frame>\n");
 		}
 		fprintf(fp, "\t</sim_real>\n");
