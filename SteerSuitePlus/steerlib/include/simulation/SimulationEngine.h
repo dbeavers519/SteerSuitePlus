@@ -195,6 +195,7 @@ namespace SteerLib {
 		virtual const SimulationOptions & getOptions() { return (*_options); }
 		virtual std::pair<std::vector<Util::Point>,std::vector<size_t> > getStaticGeometry();
 		virtual std::vector<SteerLib::AgentInitialConditions> getAgentInitialConditions() { return _agentInitialConditions; }
+		virtual int getNumFramesSimulated() { return _numFramesSimulated;  }
 
 		virtual bool isSimulationLoaded() { return _simulationLoaded; }
 		virtual bool isSimulationRunning() { return _simulationRunning; }

@@ -1,11 +1,1 @@
-﻿cl : Command line warning D9002: ignoring unknown option '-std=c++0x'
-cl : Command line warning D9002: ignoring unknown option '-ggdb'
-cl : Command line warning D9002: ignoring unknown option '-fPIC'
-  DetourProximityGrid.cpp
-  DetourPathQueue.cpp
-  DetourPathCorridor.cpp
-  DetourObstacleAvoidance.cpp
-  DetourLocalBoundary.cpp
-  DetourCrowd.cpp
-  Generating Code...
-  DetourCrowd.vcxproj -> C:\Development\Workspace\SteerSuitePlusOld\SteerSuitePlus-1cc4d30c9ef6cc7c7ed1a7a7524a235c69189940\SteerSuitePlus\build\vs2012\..\bin\DetourCrowd.lib
+﻿  DetourCrowd.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\DetourCrowd.lib

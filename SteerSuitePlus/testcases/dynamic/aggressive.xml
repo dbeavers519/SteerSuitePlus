@@ -7,15 +7,32 @@
   <name>3-squeeze</name>
   <scale>10</scale>
   <worldBounds>
-    <xmin>-84.5113</xmin>
-    <xmax>74.9231</xmax>
+    <xmin>-104.5113</xmin>
+    <xmax>94.9231</xmax>
     <ymin>0</ymin>
     <ymax>0</ymax>
-    <zmin>-144.353</zmin>
-    <zmax>145.954</zmax>
+    <zmin>-164.353</zmin>
+    <zmax>165.954</zmax>
   </worldBounds>
 </header>
-
+<circleObstacle>
+  <radius>10.0</radius>
+  <height>20.0</height>
+  <position>
+    <x>75.0</x>
+    <y>0.0</y>
+    <z>75.0</z>
+  </position>
+</circleObstacle>
+ <circleObstacle>
+   <radius>10.0</radius>
+   <height>20.0</height>
+   <position>
+     <x>-75.0</x>
+     <y>0.0</y>
+     <z>75.0</z>
+   </position>
+</circleObstacle>
 <agent>
   <name>0</name>
   <initialConditions>

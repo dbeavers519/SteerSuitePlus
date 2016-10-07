@@ -107,6 +107,8 @@ namespace SteerLib {
 		virtual const SimulationOptions & getOptions() = 0;
 		// Get the current static triangle geometry of the Engine
 		virtual std::pair<std::vector<Util::Point>,std::vector<size_t> > getStaticGeometry() = 0;
+		/// Returns the # of frames simulated so far
+		virtual int getNumFramesSimulated() = 0;
 		//@}
 
 		/// @name Boolean state queries
