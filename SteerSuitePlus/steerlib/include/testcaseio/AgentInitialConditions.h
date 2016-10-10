@@ -17,7 +17,6 @@
 
 
 namespace SteerLib {
-
 	/**
 	 * @brief Describes the type of goal for an agent.
 	 *
@@ -44,7 +43,6 @@ namespace SteerLib {
 		/// Axis Aligned region for goal.    Anyway in box counts as reached goal
 		GOAL_TYPE_AXIS_ALIGNED_BOX_GOAL
 	};
-
 
 	/**
 	 * @brief The data structure that fully describes one goal of an agent.
@@ -85,7 +83,6 @@ namespace SteerLib {
 		Behaviour targetBehaviour;
 		//@}
 	};
-
 
 	/** 
 	 * @brief The initial conditions of a single agent based on the input test case.
@@ -129,7 +126,5 @@ namespace SteerLib {
 				" start time " << ai.startTime;
 		return out;
 	}
-
 } // end namespace SteerLib
-
 #endif

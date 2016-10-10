@@ -459,7 +459,6 @@ bool GridDatabase2D::trace(const Ray & r, float & t, SpatialDatabaseItemPtr &hit
 #ifdef _DEBUG
 	std::cout << "r.pos.x = " << r.pos.x << "\n";
 	std::cout << "r.pos.z = " << r.pos.z << "\n";
-
 #endif
 	if (currentBin == -1) return false;
 	getGridCoordinatesFromIndex(currentBin,x,z);

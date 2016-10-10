@@ -1,0 +1,5 @@
+10/10/16 SteerSuite Changelog
+1. PPRAgent.h
+	- Added finished() override
+2. PPRAgent.cpp
+	- Implemented finished() override
