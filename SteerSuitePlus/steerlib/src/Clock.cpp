@@ -68,9 +68,6 @@ void Clock::advanceSimulationAndUpdateRealTime()
 	_realDt = _getTickCount() - _totalRealTime;
 	_totalRealTime += _realDt;
 
-	std::cout << "Change in RT: " << _counterTicksToSeconds(_realDt) << std::endl;
-	std::cout << "Total RT: " << _counterTicksToSeconds(_totalRealTime) << std::endl;
-
 	// 2. compute the next simulation dt
 	if ((_clockMode == CLOCK_MODE_FIXED_AS_FAST_AS_POSSIBLE) || (_clockMode == CLOCK_MODE_FIXED_REAL_TIME)) {
 		_simulationDt = _fixedTicksPerFrame;
@@ -83,8 +80,6 @@ void Clock::advanceSimulationAndUpdateRealTime()
 
 	// 3. update total simulation time based on the new simulation dt
 	_totalSimulationTime += _simulationDt;
-	std::cout << "Change in ST: " << _counterTicksToSeconds(_simulationDt) << std::endl;
-	std::cout << "Total ST: " << _counterTicksToSeconds(_totalSimulationTime) << std::endl;
 
 	// 5. measure fps
 	_updateFpsMeasurement();

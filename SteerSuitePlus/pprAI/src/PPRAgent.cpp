@@ -80,8 +80,6 @@ PPRAgent::PPRAgent()
 	_id=0;
 }
 
-
-
 //
 // destructor
 //
@@ -595,7 +593,7 @@ void PPRAgent::runShortTermPlanningPhase()
 		float minDistSquared = INFINITY;
 
 #ifdef _DEBUG
-	std::cout << "about to for (unsigned int i=0; i<_midTermPathSize; i++)\n";
+	//std::cout << "about to for (unsigned int i=0; i<_midTermPathSize; i++)\n";
 #endif
 		for (unsigned int i=0; i<_midTermPathSize; i++) {
 			Util::Point tempTargetLocation;
@@ -662,14 +660,14 @@ void PPRAgent::runShortTermPlanningPhase()
 		else
 		{
 #ifdef _DEBUG
-	std::cout << "about to _waypoints[_currentWaypointIndex];\n";
+	//std::cout << "about to _waypoints[_currentWaypointIndex];\n";
 #endif
 			_localTargetLocation = _waypoints[_currentWaypointIndex];
 #ifdef _DEBUG_ENTROPY
 			std::cout << "local target set to waypoint at index2 " << _localTargetLocation << std::endl;
 #endif
 #ifdef _DEBUG
-	std::cout << "done _waypoints[_currentWaypointIndex];\n";
+	//std::cout << "done _waypoints[_currentWaypointIndex];\n";
 #endif
 		}
 	}
@@ -679,7 +677,7 @@ void PPRAgent::runShortTermPlanningPhase()
 			// this case is reached when you're outside the database
 			// in this case, just point towards your waypoint and hope for the best.
 #ifdef _DEBUG
-	std::cout << "about to _localTargetLocation = _waypoints[_currentWaypointIndex];\n";
+	//std::cout << "about to _localTargetLocation = _waypoints[_currentWaypointIndex];\n";
 #endif
 #ifdef _DEBUG_ENTROPY
 			std::cout << "local target set to waypoint at index3" << _localTargetLocation << std::endl;
@@ -2088,7 +2086,15 @@ void PPRAgent::disable()
 	_enabled = false;
 }
 
-
+// Overrides base finished() method, required to run from command line
+bool PPRAgent::finished() {
+	if (_goalQueue.size() == 0) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
 
 //
 // drawPlannedPath()

@@ -1,0 +1,11 @@
+10/03/16 SteerSuite Changelog
+1. TestCaseIOPrivate.h
+	- Added scale value
+2. TestCaseReaderPrivate.cpp
+	- Added scaling
+3. TestCaseWriter.cpp
+	- Added scale output in header, cameraView, agents, and obstacles
+4. SimulationEngine.cpp
+	- Changed exit condition to # disabled agents = total # agents
+5. TestCaseReader.cpp
+	- Added default scale value in readTestCaseFromFile()

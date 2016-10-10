@@ -1,2 +1,3 @@
-﻿  glfw.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\glfw.dll
+﻿     Creating library ..\bin\glfw.lib and object ..\bin\glfw.exp
+  glfw.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\glfw.dll
   glfw.vcxproj -> ..\bin\glfw.pdb (Full PDB)

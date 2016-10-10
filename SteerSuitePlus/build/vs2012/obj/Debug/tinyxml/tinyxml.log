@@ -1,2 +1,8 @@
-﻿  tinyxml.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\tinyxml.dll
+﻿  tinyxmlparser.cpp
+  tinyxmlerror.cpp
+  tinyxml.cpp
+  tinystr.cpp
+  ticpp.cpp
+  Generating Code...
+  tinyxml.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\tinyxml.dll
   tinyxml.vcxproj -> ..\bin\tinyxml.pdb (Full PDB)

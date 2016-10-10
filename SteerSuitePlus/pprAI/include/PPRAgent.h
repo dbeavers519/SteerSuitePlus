@@ -137,7 +137,8 @@ public:
 		return _gEngine->isAgentSelected(this);
 	}
 
-
+	// Override finished method
+	virtual bool finished();
 protected:
 	//========================
 	// private functionality:

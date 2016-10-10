@@ -1,1 +1,11 @@
-﻿  Detour.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\Detour.lib
+﻿cl : Command line warning D9002: ignoring unknown option '-std=c++0x'
+cl : Command line warning D9002: ignoring unknown option '-ggdb'
+cl : Command line warning D9002: ignoring unknown option '-fPIC'
+  DetourNode.cpp
+  DetourNavMeshQuery.cpp
+  DetourNavMeshBuilder.cpp
+  DetourNavMesh.cpp
+  DetourCommon.cpp
+  DetourAlloc.cpp
+  Generating Code...
+  Detour.vcxproj -> C:\Development\Workspace\SteerSuitePlus\SteerSuitePlus\build\vs2012\..\bin\Detour.lib
