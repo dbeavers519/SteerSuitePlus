@@ -370,6 +370,8 @@ void initializeOptionsFromCommandLine( int argc, char **argv, SimulationOptions 
 	opts.addOption( "-dataFileName", &simulationOptions.globalOptions.dataFileName, OPTION_DATA_TYPE_STRING);
 	opts.addOption("-outputResults", NULL, OPTION_DATA_TYPE_NO_DATA, 0, &simulationOptions.engineOptions.outputResults, true);
 	opts.addOption("-outputresults", NULL, OPTION_DATA_TYPE_NO_DATA, 0, &simulationOptions.engineOptions.outputResults, true);
+	opts.addOption("-fps", &simulationOptions.engineOptions.fixedFPS, OPTION_DATA_TYPE_FLOAT);
+	opts.addOption("-FPS", &simulationOptions.engineOptions.fixedFPS, OPTION_DATA_TYPE_FLOAT);
 
 	// Dummy option parsing for the special options, but these are used earlier and ignored at this point.
 	opts.addOption("-config", NULL, OPTION_DATA_TYPE_STRING);
