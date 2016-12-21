@@ -350,7 +350,7 @@ void PPRAgent::updateAI(float timeStamp, float dt, unsigned int frameNumber)
 
 	// If output results, save position
 	if (_gEngine->getOptions().engineOptions.outputResults) {
-		_positionList.push_back(std::pair<int, Util::Point>(getSimulationEngine()->getNumFramesSimulated() + 1, _position));
+		_positionList.push_back(std::pair<float, Util::Point>(getSimulationEngine()->getClock().getCurrentSimulationTime(), _position));
 	}
 	// DrawLib::drawLine(position(), oldPosition);
 }

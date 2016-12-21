@@ -813,12 +813,12 @@ void TestCaseWriter::writeTestCaseToFile(FILE *fp,
 		// Write agent locations
 		fprintf(fp, "\t<sim_real>\n");
 		for (int j = 0; j < agents[i]->getPositionList().size(); j++) {
-			fprintf(fp, "\t\t<frame>\n");
-			fprintf(fp, "\t\t\t<number>%d</number>\n", agents[i]->getPositionList().at(j).first);
+			fprintf(fp, "\t\t<location>\n");
+			fprintf(fp, "\t\t\t<time>%f</time>\n", agents[i]->getPositionList().at(j).first);
 			fprintf(fp, "\t\t\t<x>%f</x>\n", agents[i]->getPositionList().at(j).second.x);
 			fprintf(fp, "\t\t\t<y>%f</y>\n", agents[i]->getPositionList().at(j).second.y);
 			fprintf(fp, "\t\t\t<z>%f</z>\n", agents[i]->getPositionList().at(j).second.z);
-			fprintf(fp, "\t\t</frame>\n");
+			fprintf(fp, "\t\t</location>\n");
 		}
 		fprintf(fp, "\t</sim_real>\n");
 		fprintf(fp, "</agent>\n");
